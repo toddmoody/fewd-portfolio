@@ -86,5 +86,46 @@ const arProjectsModal = new tingle.modal({
     },
 });
 
+const bhProjectsBtn = document.getElementById('bhProjectsBtn');
+bhProjectsBtn.addEventListener('click', function(){
+    console.log('hello!');
+    bhProjectsModal.open();
+})
+
+
+const bhProjectsModal = new tingle.modal({
+    footer: true,
+    stickyFooter: false,
+    closeMethods: ['overlay', 'button', 'escape'],
+    closeLabel: "Close",
+    cssClass: [],
+    onOpen: function() {
+        this.setContent(document.querySelector('.bhProjectsModal').innerHTML);
+    },
+    onClose: function() {
+        console.log('bhProjectsModal closed');
+    },
+});
+
+const mmProjectsBtn = document.getElementById('mmProjectsBtn');
+mmProjectsBtn.addEventListener('click', function(){
+    mmProjectsModal.open();
+})
+
+
+const mmProjectsModal = new tingle.modal({
+    footer: true,
+    stickyFooter: false,
+    closeMethods: ['overlay', 'button', 'escape'],
+    closeLabel: "Close",
+    cssClass: [],
+    onOpen: function() {
+        this.setContent(document.querySelector('.mmProjectsModal').innerHTML);
+    },
+    onClose: function() {
+        console.log('mmProjectsModal closed');
+    },
+});t
+
 
 

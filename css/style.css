@@ -737,12 +737,30 @@ footer .social-links a:hover {
     height: 32px;
 }
 
+.project-tech-icon-left {
+    width: 32px;
+    height: 32px;
+    margin: 1.5em 1.5em 0;
+}
+
+.project-tech-single {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1.2em;
+    max-width: 90px; 
+}
+
 .project-detail-tech {
     display: flex;
     width: 100%;
     align-self: flex-end;
     justify-content: space-around;
     margin-top: 1.9em;
+}
+
+.project-detail-tech-left {
+    display: flex;
+    justify-content: left;
 }
 
 .tech {
