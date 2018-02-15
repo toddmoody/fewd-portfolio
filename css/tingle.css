@@ -23,8 +23,9 @@ textarea {
   margin-bottom: 32px;
   font-size: 1.3rem;
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 1px solid #e2e1e1;
+  border-radius: 5px;
+  color: grey;
   outline: none;
 }
 

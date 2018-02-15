@@ -125,7 +125,27 @@ const mmProjectsModal = new tingle.modal({
     onClose: function() {
         console.log('mmProjectsModal closed');
     },
-});t
+});
+
+const rfProjectsBtn = document.getElementById('rfProjectsBtn');
+rfProjectsBtn.addEventListener('click', function(){
+    rfProjectsModal.open();
+})
+
+
+const rfProjectsModal = new tingle.modal({
+    footer: true,
+    stickyFooter: false,
+    closeMethods: ['overlay', 'button', 'escape'],
+    closeLabel: "Close",
+    cssClass: [],
+    onOpen: function() {
+        this.setContent(document.querySelector('.rfProjectsModal').innerHTML);
+    },
+    onClose: function() {
+        console.log('rfProjectsModal closed');
+    },
+});
 
 
 
